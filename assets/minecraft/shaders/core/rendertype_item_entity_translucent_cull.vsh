@@ -114,7 +114,7 @@ void main() {
 
     if (dyed_icolor.rg == ivec2(23, 101)) {
         debug_color = vec4(-skybox_vertex_positions_array[(alpha & 0xF)-1], 1.0);
-        vec3 vertex_pos = rotateX(GameTime*160.0) * -skybox_vertex_positions_array[(alpha & 0xF)-1];
+        vec3 vertex_pos = rotateZ(GameTime*2.0) * -skybox_vertex_positions_array[(alpha & 0xF)-1];
         world_pos = vertex_pos;
         
         gl_Position = ProjMat * ModelViewMat * vec4(vertex_pos*128.0, 1.0);
