@@ -1,0 +1,12 @@
+{
+	"item.frostbite.debug": "\u2022 Debug Item \u2022",
+	"item.frostbite.debug.lore.0": "this is debug line0",
+	"item.frostbite.debug.lore.1": "line1",
+	"item.frostbite.debug.lore.2": "it's another test yaaaay",
+	"rarity.frostbite.common": "Common",
+	"tooltip.short_atttribute_name.max_health": "HP",
+	"tooltip.short_atttribute_name.attack_damage": "DMG",
+	"tooltip.short_atttribute_name.movement_speed": "SPD",
+	"tooltip.short_atttribute_name.armor": "DEF",
+	"tooltip.short_atttribute_name.luck": "LUCK"
+}

@@ -1,0 +1,63 @@
+Welcome to logs, basically if your going to change something you can add a small breif about it here,
+also please fill in the dates when you add a log, its just helpful, this will also be used to see
+how far we have developed TJM frostbite and is something we can look back on and laugh about.
+-----
+05/08/2024
+JM: Alright so today i've made the Resource pack cleaned and i'm thinking of passing it over to you so you
+    can fix the fucking horrible crossbow json i cannot bare to look at, im also thinking we should add custom
+    enchants and types of crossbows since they were VERY iconic in TJM :))
+
+    I have yet to use the script you have made me since i'm very scared of having the ugly scuffed JSON stuff to
+    deal with but apart from that i'm feeling somewhat confident, how this message finds you well! :D
+-----
+05/08/2024
+AXA: indentaion in crossbow model was eaten by a gremlin I see
+-----
+06/08/2024
+JM: haiiiiiiii that waz me :3
+-----
+07/08/2024 - 00:08
+JM: Just added all 15 fish back into the game but i've changed all their lore and stats since i cba readding all
+    of the old ones, im feeling alot more confident working on TJM now that i've actually gotten started on it,
+    have you found any way to add clouds with the northen lights? since im REALLY looking forward to seeing them!
+-----
+12/09/2024 - 22:50
+JM: Holy shit time flies i just got back to working on the pack, we both just got git working which is nice and i
+    just added JMs health = speed mechanic, im going to make temperature work in the game though your prooobbbabllyy gonna
+    have to optimise it because last time it was a train wreck, im also allowing LostPuppet to help with the enchantments
+    since hes VERY good at that stuff :D
+-----
+16/09/2024 - 22:50
+JM: Alright so i've did some small play testing with Aron, Woag and Gamer, fishing works really well and rare items are well, rare.
+    though aron said that the resting mechanic is not the best still, maybe i'll make it so the more you run the slower you get every
+    100 "cassie.stamina" and then increase the recovery time by +2 seconds, so if your "C.S" is 600 you'd need to rest for 12 seconds.
+    Cassie's sprint mechanic also spams recovery/succsessful and type/no_stamina which is an issue, i also need to change the "breathing sfx"
+
+    JMs speed system seems to be fine right now since there have been no complaints, our next steps are probably to get a shop generator working
+    a pickaxe generator and a parry system for the swords working :))
+
+    I'm writing this on the 16th meaning i'll be on holiday tomorrow, before i sleep though i'm going to test your regenerating blocks. ^^
+-----
+00/00/0000
+AXA:
+-----
+00/00/0000
+JM:
+-----
+00/00/0000
+AXA:
+-----
+00/00/0000
+JM:
+-----
+00/00/0000
+AXA:
+-----
+00/00/0000
+JM:
+-----
+00/00/0000
+AXA:
+-----
+00/00/0000
+JM:
