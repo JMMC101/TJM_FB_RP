@@ -1,0 +1,12 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "frostbite:item/skybox/starfield01",
+        "tints": [
+            {
+                "type": "dye",
+                "default": 1533184
+            }
+        ]
+    }
+}
