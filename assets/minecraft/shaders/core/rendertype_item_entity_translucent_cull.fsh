@@ -3,6 +3,7 @@
 #moj_import <minecraft:fog.glsl>
 #moj_import <frostbite:easing.glsl>
 #moj_import <frostbite:matrices.glsl>
+#moj_import <frostbite:noise.glsl>
 
 #define halfpi 1.5707963267948966
 #define pi 3.141592653589793
@@ -28,6 +29,7 @@ in vec3 world_pos;
 in vec3 pos_xz_0;
 in vec3 pos_xz_1;
 in vec3 pos_xz_2;
+in vec2 moon_center_uv;
 
 flat in int object_type;
 
@@ -67,8 +69,18 @@ void main() {
         break;
 
         case 2: // switching skyboxes
-        vec3 sky_color0 = texture(Sampler0, texCoord0).rgb;
         gl_FragDepth = 0.9999;
+        //mat2 a = mat2(1.0);
+        //mat4 b = mat4(a);
+        //fragColor = vec4(vec3(b[2][2]), 1.0); return;
+        //fragColor = vec4(fract(texCoord0* 8.0), 0.0, 1.0); return;
+        //fragColor = vec4(fract(moon_center_uv* 1024.35466), 0.0, 1.0); return;
+        //fragColor = vec4(moon_center_uv, 0.0, 1.0); return;
+        vec3 sky_color0 = texture(Sampler0, texCoord0).rgb;
+        //if (sky_color0.g - (sky_color0.r + sky_color0.b) > 0.5) {
+        //    fragColor = vec4(1.0);
+        //    return;
+        //}
 
         vec2 recived_size = get_recived_size();
         float recived_data = max(recived_size.x, recived_size.y);
@@ -76,10 +88,22 @@ void main() {
 
         vec3 normalized_world_pos = normalize(world_pos);
 
+        float breakup = mod(gl_FragCoord.y, 3.0) * 0.02;
+
+        float mod_heightF = abs(normalized_world_pos.y + 0.2);
+        mod_heightF *= mod_heightF;
+        mod_heightF = 1.0 - mod_heightF;
+        mod_heightF *= mod_heightF;
+        mod_heightF *= mod_heightF + breakup;
+        sky_color0 += vec3(0.2, 0.18, 0.3) * mod_heightF * 0.1;
+        mod_heightF *= mod_heightF;
+        sky_color0 += vec3(0.31, 0.23, 0.3) * mod_heightF * 0.1;
+
+
         float mod_heightA = cubic_in_out(clamp((normalized_world_pos.y - 0.05) * 3.0, 0.0, 1.0));
         float mod_heightB = 1.0 - max(normalized_world_pos.y + 0.1, 0.0);
         mod_heightB *= mod_heightB;
-        mod_heightB *= mod_heightB;
+        mod_heightB *= mod_heightB;  float mod_heightE = mod_heightB;  // to avoid repeatimg the same computations
         mod_heightB *= mod_heightB;
 
         vec3 sky_color1 = mix(
@@ -92,13 +116,45 @@ void main() {
             0.0
         );
 
+        vec3 moon_light_color = mix(
+            vec3(1.0, 1.0, 1.0),
+            vec3(1.0, 1.0, 0.0),
+            mod_heightE
+        );
+        mod_heightE *= mod_heightE;
+        moon_light_color = mix(
+            moon_light_color,
+            vec3(1.0, 0.5, 0.2),
+            mod_heightE
+        );
+        //fragColor = vec4(moon_light_color, 1.0); return;
+
         vec3 rotated_normalized_world_pos = rotateZ(recived_data) * normalized_world_pos;
 
+
         float sun_area_factor = max(rotated_normalized_world_pos.y,0.0);
+        float moon_area_factor = max(-rotated_normalized_world_pos.y,0.0);
 
         vec3 plane_intersection = plane_intersect(1.0, rotated_normalized_world_pos);
-        float sun_dist = max(abs(plane_intersection.x), abs(plane_intersection.z));
-        float sun = clamp(floor((0.1-sun_dist)*48.0)/2.2 * sun_area_factor, 0.0,1.0);
+        float celestial_body_dist = max(abs(plane_intersection.x), abs(plane_intersection.z));
+
+        float sun = clamp(floor((0.1-celestial_body_dist)*48.0)/2.2 * sun_area_factor, 0.0,1.0);
+
+        vec4 moon = texture(Sampler0, plane_intersection.zx / textureSize(Sampler0,0).xy * 64.0 + moon_center_uv);
+        //moon = vec4(
+        //    clamp(floor((0.1-celestial_body_dist)*48.0) * moon_area_factor, 0.0,1.0)
+        //);
+        moon *= moon.a * clamp((0.1-celestial_body_dist)*48.0 * moon_area_factor, 0.0,1.0);
+        moon_area_factor = min(asin(moon_area_factor) / 1.57, 1.0);
+        moon_area_factor *= moon_area_factor;
+        moon_area_factor *= moon_area_factor;
+        moon_area_factor *= moon_area_factor;
+        moon_area_factor = moon_area_factor*0.3 + moon_area_factor*moon_area_factor*moon_area_factor*0.4;
+        moon.rgb += vec3(moon_area_factor * (1.0 - moon.a));
+        moon.rgb *= moon_light_color;
+
+        sky_color0.rgb *= (1.0 - moon.a);  // makes the moob block stars
+
 
         //fragColor = vec4(vec3(1.0), sun); return;
 
@@ -173,7 +229,8 @@ void main() {
         fragColor = vec4(
             mix(sky_color0, col2, daynight_factor)
             + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
-            + vec3(sun, sun*sun, sun*0.3),
+            + vec3(sun, sun*sun, sun*0.3)
+            + moon.rgb,
             1.0
         );
 
