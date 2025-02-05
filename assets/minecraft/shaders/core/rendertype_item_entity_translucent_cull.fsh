@@ -226,14 +226,16 @@ void main() {
             pow(mod_heightD, 8.0) * sunsetrise_factor * (0.9 + rotated_normalized_world_pos.y*0.1)
         );
 
-        switch (int(gl_FragCoord) & 3) {
+        //fragColor = vec4(float(int(gl_FragCoord.x) & 3)/4.0, 0.0, 0.0, 1.0); return;
+
+        switch (int(gl_FragCoord.x) & 3) {
             case 0:
             fragColor = vec4(
                 sun_area_factor,
                 moon_area_factor,
                 celestial_body_dist,
                 1.0
-            );
+            ); break;
 
             case 1:
             fragColor = vec4(
@@ -241,19 +243,19 @@ void main() {
                 glow,
                 daynight_factor,
                 1.0
-            );
+            ); break;
 
             case 2:
             fragColor = vec4(
                 normalized_world_pos,
                 1.0
-            );
+            ); break;
 
             case 3:
             fragColor = vec4(
                 plane_intersection,
                 1.0
-            );
+            ); break;
         }; return;
 
         fragColor = vec4(
