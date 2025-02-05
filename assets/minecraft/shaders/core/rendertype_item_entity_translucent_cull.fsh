@@ -226,6 +226,36 @@ void main() {
             pow(mod_heightD, 8.0) * sunsetrise_factor * (0.9 + rotated_normalized_world_pos.y*0.1)
         );
 
+        switch (int(gl_FragCoord) & 3) {
+            case 0:
+            fragColor = vec4(
+                sun_area_factor,
+                moon_area_factor,
+                celestial_body_dist,
+                1.0
+            );
+
+            case 1:
+            fragColor = vec4(
+                moon_area_factor,
+                glow,
+                daynight_factor,
+                1.0
+            );
+
+            case 2:
+            fragColor = vec4(
+                normalized_world_pos,
+                1.0
+            );
+
+            case 3:
+            fragColor = vec4(
+                plane_intersection,
+                1.0
+            );
+        }; return;
+
         fragColor = vec4(
             mix(sky_color0, col2, daynight_factor)
             + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
