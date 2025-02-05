@@ -153,7 +153,7 @@ void main() {
         moon.rgb += vec3(moon_area_factor * (1.0 - moon.a));
         moon.rgb *= moon_light_color;
 
-        sky_color0.rgb *= (1.0 - moon.a);  // makes the moob block stars
+        //sky_color0.rgb *= (1.0 - moon.a);  // makes the moob block stars
 
 
         //fragColor = vec4(vec3(1.0), sun); return;
