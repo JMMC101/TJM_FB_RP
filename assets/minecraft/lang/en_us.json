@@ -1,4 +1,8 @@
 {
+	"options.gamma": "Orientation",
+	"options.gamma.min": "straight",
+	"options.gamma.default": "bi",
+	"options.gamma.max": "VERY GAY",
 	"tooltip.frostbite.rarity": "Rarity: ",
 	"rarity.frostbite.common": "[Common]",
 	"rarity.frostbite.uncommon": "[Uncommon]",
