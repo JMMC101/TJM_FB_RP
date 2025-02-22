@@ -8,3 +8,6 @@ axallia draws gay furry porn
 
 JM likes uhhhhhhhhh well you know, i like "beaches" :D
 -JM
+
+no need to censor it, you can just straight up say that you like bitches in here /j
+-axa
