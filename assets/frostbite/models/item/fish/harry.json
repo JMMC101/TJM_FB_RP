@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "frostbite:item/fish/get_names.py"
+		"layer0": "frostbite:item/fish/harry"
 	}
 }

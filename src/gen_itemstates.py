@@ -2,7 +2,7 @@ from minecraft_model_generation.simple_itemstate import gen_basic_itemstates as 
 
 
 items_fish:list[str] = [
-    'angry', 'askri', 'cassie', 'clownfish', 'dirt', 'fishaxe', 'get_names.py', 'gledder', 'goldfish', 'ice', 'jm', 'obsidian'
+    'angry', 'askri', 'blind', 'cassie', 'clownfish', 'dirt', 'fishaxe', 'gledder', 'goldfish', 'harry', 'ice', 'jm', 'obsidian', 'og', 'piranha', 'swordfish', 'tosanoide', 'transgender', 'tuna'
 ]
 
 gen(
