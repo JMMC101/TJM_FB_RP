@@ -230,39 +230,39 @@ void main() {
 
         bool reference = (int(gl_FragCoord.y) & 7) == 0;
 
-        switch (int(gl_FragCoord.x) & 3) {
-            case 0:
-            if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0);break; }
-            fragColor = vec4(
-                sun_area_factor,
-                moon_area_factor,
-                celestial_body_dist,
-                1.0
-            ); break;
-
-            case 1:
-            if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0);break; }
-            fragColor = vec4(
-                moon_area_factor,
-                glow,
-                daynight_factor,
-                1.0
-            ); break;
-
-            case 2:
-            if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0);break; }
-            fragColor = vec4(
-                normalized_world_pos,
-                1.0
-            ); break;
-
-            case 3:
-            if (reference) { fragColor = vec4(1.0,0.0,1.0,1.0);break; }
-            fragColor = vec4(
-                plane_intersection,
-                1.0
-            ); break;
-        }; return;
+        //switch (int(gl_FragCoord.x) & 3) {
+        //    case 0:
+        //    if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0);break; }
+        //    fragColor = vec4(
+        //        sun_area_factor,
+        //        moon_area_factor,
+        //        celestial_body_dist,
+        //        1.0
+        //    ); break;
+//
+        //    case 1:
+        //    if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0);break; }
+        //    fragColor = vec4(
+        //        moon_area_factor,
+        //        glow,
+        //        daynight_factor,
+        //        1.0
+        //    ); break;
+//
+        //    case 2:
+        //    if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0);break; }
+        //    fragColor = vec4(
+        //        normalized_world_pos,
+        //        1.0
+        //    ); break;
+//
+        //    case 3:
+        //    if (reference) { fragColor = vec4(1.0,0.0,1.0,1.0);break; }
+        //    fragColor = vec4(
+        //        plane_intersection,
+        //        1.0
+        //    ); break;
+        //}; return;
 
         fragColor = vec4(
             mix(sky_color0, col2, daynight_factor)
