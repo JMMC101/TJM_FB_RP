@@ -230,6 +230,47 @@ void main() {
 
         bool reference = (int(gl_FragCoord.y) & 7) == 0;
 
+        vec4 final_test_color = vec4(
+            mix(sky_color0, col2, daynight_factor)
+            + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
+            + vec3(sun, sun*sun, sun*0.3)
+            + moon.rgb,
+            1.0
+        );
+
+        switch (int(gl_FragCoord.x) & 3) {
+            case 0:
+            if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
+            fragColor = vec4(
+                abs(final_test_color.r) < 1e-10 ? 1.0 : 0.0,
+                -sign(final_test_color.r),
+                isnan(final_test_color.r),
+                1.0
+            ); break;
+
+            case 1:
+            if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
+            fragColor = vec4(
+                abs(final_test_color.g) < 1e-10 ? 1.0 : 0.0,
+                -sign(final_test_color.g),
+                isnan(final_test_color.g),
+                1.0
+            ); break;
+
+            case 2:
+            if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
+            fragColor = vec4(
+                abs(final_test_color.b) < 1e-10 ? 1.0 : 0.0,
+                -sign(final_test_color.b),
+                isnan(final_test_color.b),
+                1.0
+            ); break;
+
+            case 3:
+            fragColor = vec4(vec3(0.0),1.0);
+        }
+        return;
+
         //switch (int(gl_FragCoord.x) & 3) {
         //    case 0:
         //    if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0);break; }

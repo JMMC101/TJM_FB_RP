@@ -37,13 +37,13 @@ vec3 color_correct(vec3 color) {
         invcolor.r*invcolor.r
     ) * color.r;
     vec3 green = mix(
-        vec3(0.0, 0.8, 0.4),
-        vec3(0.0, 0.1, 0.9),
+        vec3(0.4, 0.9, 0.6),
+        vec3(0.1, 0.2, 0.6),
         invcolor.b*invcolor.b
     ) * color.g;
     vec3 blue = mix(
-        vec3(0.5, 0.1, 0.9),
-        vec3(0.9, 0.0, 0.9),
+        vec3(0.5, 0.3, 0.9),
+        vec3(0.6, 0.3, 0.9),
         invcolor.b*invcolor.b
     ) * color.b;
 
@@ -55,7 +55,8 @@ vec3 color_correct(vec3 color) {
     //color = mix(color, green, oversaturated.g);
     //color = mix(color, blue, oversaturated.b);
 
-    return mix(color, colormod, oversaturated.a*oversaturated.a);
+    //return vec3(1.0) - (vec3(0.05) / mix(color, colormod, oversaturated.a*oversaturated.a*0.5));
+    return mix(color, colormod, oversaturated.a*oversaturated.a*0.5);
 
 
     //float warmness = length(color/luminocity - vec3(1.0, 0.5, 0.0));
