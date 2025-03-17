@@ -242,18 +242,18 @@ void main() {
             case 0:
             if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
             fragColor = vec4(
-                abs(final_test_color.r) < 1e-10 ? 1.0 : 0.0,
-                -sign(final_test_color.r),
-                isnan(final_test_color.r),
+                abs(moon.r) < 1e-10 ? 1.0 : 0.0,
+                -sign(moon.r),
+                isnan(moon.r),
                 1.0
             ); break;
 
             case 1:
             if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
             fragColor = vec4(
-                abs(final_test_color.g) < 1e-10 ? 1.0 : 0.0,
-                -sign(final_test_color.g),
-                isnan(final_test_color.g),
+                abs(moon_light_color.g) < 1e-10 ? 1.0 : 0.0,
+                -sign(moon_light_color.g),
+                isnan(moon_light_color.g),
                 1.0
             ); break;
 
@@ -267,9 +267,47 @@ void main() {
             ); break;
 
             case 3:
-            fragColor = vec4(vec3(0.0),1.0);
+            fragColor = vec4(
+                isnan(1.0/0.0),
+                isnan(0.0*1e1000000),
+                isnan(asin(-23.34354)),
+                1.0
+            );
         }
         return;
+
+        //switch (int(gl_FragCoord.x) & 3) {
+        //    case 0:
+        //    if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
+        //    fragColor = vec4(
+        //        abs(final_test_color.r) < 1e-10 ? 1.0 : 0.0,
+        //        -sign(final_test_color.r),
+        //        isnan(final_test_color.r),
+        //        1.0
+        //    ); break;
+//
+        //    case 1:
+        //    if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
+        //    fragColor = vec4(
+        //        abs(final_test_color.g) < 1e-10 ? 1.0 : 0.0,
+        //        -sign(final_test_color.g),
+        //        isnan(final_test_color.g),
+        //        1.0
+        //    ); break;
+//
+        //    case 2:
+        //    if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
+        //    fragColor = vec4(
+        //        abs(final_test_color.b) < 1e-10 ? 1.0 : 0.0,
+        //        -sign(final_test_color.b),
+        //        isnan(final_test_color.b),
+        //        1.0
+        //    ); break;
+//
+        //    case 3:
+        //    fragColor = vec4(vec3(0.0),1.0);
+        //}
+        //return;
 
         //switch (int(gl_FragCoord.x) & 3) {
         //    case 0:
