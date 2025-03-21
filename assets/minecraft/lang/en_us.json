@@ -337,5 +337,9 @@
 	"item.frostbite.fish_catfish.lore.2": "a common fish... :/",
 	"item.frostbite.fish_bart": "\u2022 Bart Shrimpson \u2022",
 	"item.frostbite.fish_bart.lore.0": "i spent 2 hours on this Bart Shrimpson",
-	"item.frostbite.fish_bart.lore.1": "for nothing, no views i bet."
+	"item.frostbite.fish_bart.lore.1": "for nothing, no views i bet.",
+	"item.frostbite.pickaxe_amethyst": "\u2022 Amethyst Pickaxe \u2022",
+	"item.frostbite.pickaxe_amethyst.lore.0": "A pickaxe that can only be found deep",
+	"item.frostbite.pickaxe_amethyst.lore.1": "within' caves, no one knows how it",
+	"item.frostbite.pickaxe_amethyst.lore.2": "was made..."
 }
