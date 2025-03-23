@@ -12,6 +12,7 @@ if 0:
         'frostbite:item/fish/'
     )
 
+
 if 1:
     items_pickaxes:list[str] = [
         'amethyst'
@@ -22,4 +23,26 @@ if 1:
         'assets/frostbite/models/item/tool/pickaxe/',
         items_pickaxes,
         'frostbite:item/tool/pickaxe/'
+    )
+
+
+if 1:
+    states_crossbow:list[str] = [
+        'standby',
+        'pulling_0',
+        'pulling_1',
+        'pulling_2',
+        'arrow',
+    ]
+
+
+    gen(
+        'assets/frostbite/models/item/weapon/crossbow/broken/',
+        states_crossbow,
+        'assets/frostbite/textures/item/weapon/crossbow/broken/'
+    )
+    gen(
+        'assets/frostbite/models/item/weapon/crossbow/minigun/',
+        states_crossbow,
+        'assets/frostbite/textures/item/weapon/crossbow/minigun/'
     )

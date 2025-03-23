@@ -11,6 +11,17 @@ if 0:
         'frostbite:item/fish/'
     )
 
+if 0:
+    items_picamds:list[str] = [
+        'amethyst'
+    ]
+
+    gen(
+        'assets/frostbite/items/tool/pickaxe/',
+        items_picamds,
+        'frostbite:item/tool/pickaxe/'
+    )
+
 if 1:
     items_picamds:list[str] = [
         'amethyst'

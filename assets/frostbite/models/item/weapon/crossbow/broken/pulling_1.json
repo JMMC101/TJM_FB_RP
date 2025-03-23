@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "assets/frostbite/textures/item/weapon/crossbow/broken/pulling_1"
+	}
+}
