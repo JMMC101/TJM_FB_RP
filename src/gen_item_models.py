@@ -25,6 +25,19 @@ if 1:
         'frostbite:item/tool/pickaxe/'
     )
 
+if 1:
+    items_swords:list[str] = [
+        'wooden.shattered','wooden.baton','stone.healthy','stone.dagger','lightsaber','iron.longsword','iron.longsword.heavy'
+    ]
+
+
+    gen(
+        'assets/frostbite/models/item/weapon/sword/',
+        items_swords,
+        'frostbite:item/weapon/sword/'
+    )
+
+
 
 if 1:
     states_crossbow:list[str] = [
