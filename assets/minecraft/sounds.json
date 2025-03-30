@@ -6,6 +6,8 @@
     "tjm.arrow.parry": {"sounds": ["effects/arrow.parry"],"stream":true},
     "tjm.first.hit": {"sounds": ["effects/first.hit"],"stream":true},
     "tjm.night.jingle": {"sounds": ["effects/night.jingle"],"stream":true},
+    "tjm.final_stand.heartbeat": {"sounds": ["effects/final_stand.heatbeat"],"stream":true},
+
 
     "item.goat_horn.sound.0": {"replace": true, "sounds": []},
     "item.goat_horn.sound.1": {"replace": true, "sounds": []},
@@ -15,7 +17,14 @@
     "item.goat_horn.sound.5": {"replace": true, "sounds": []},
     "item.goat_horn.sound.6": {"replace": true, "sounds": []},
     "item.goat_horn.sound.7": {"replace": true, "sounds": []},
-
+    "tjm.gh.ponder": {"sounds": ["horn/ponder"],"stream":true},
+    "tjm.gh.sing": {"sounds": ["horn/sing"],"stream":true},
+    "tjm.gh.seek": {"sounds": ["horn/seek"],"stream":true},
+    "tjm.gh.feel": {"sounds": ["horn/feel"],"stream":true},
+    "tjm.gh.admire": {"sounds": ["horn/admire"],"stream":true},
+    "tjm.gh.call": {"sounds": ["horn/call"],"stream":true},
+    "tjm.gh.yearn": {"sounds": ["horn/yearn"],"stream":true},
+    "tjm.gh.dream": {"sounds": ["horn/dream"],"stream":true},
     "tjm.gh.great_sky_falling.0": {"sounds": ["horn/great_sky_falling.0"],"stream":true},
     "tjm.gh.great_sky_falling.1": {"sounds": ["horn/great_sky_falling.1"],"stream":true},
     "tjm.gh.great_sky_falling.2": {"sounds": ["horn/great_sky_falling.2"],"stream":true},
@@ -46,16 +55,6 @@
     "tjm.gh.sweet_moon_love.0": {"sounds": ["horn/sweet_moon_love.0"],"stream":true},
     "tjm.gh.sweet_moon_love.1": {"sounds": ["horn/sweet_moon_love.1"],"stream":true},
     "tjm.gh.sweet_moon_love.2": {"sounds": ["horn/sweet_moon_love.2"],"stream":true},
-
-    "tjm.gh.ponder": {"sounds": ["horn/ponder"],"stream":true},
-    "tjm.gh.sing": {"sounds": ["horn/sing"],"stream":true},
-    "tjm.gh.seek": {"sounds": ["horn/seek"],"stream":true},
-    "tjm.gh.feel": {"sounds": ["horn/feel"],"stream":true},
-    "tjm.gh.admire": {"sounds": ["horn/admire"],"stream":true},
-    "tjm.gh.call": {"sounds": ["horn/call"],"stream":true},
-    "tjm.gh.yearn": {"sounds": ["horn/yearn"],"stream":true},
-    "tjm.gh.dream": {"sounds": ["horn/dream"],"stream":true},
-
     "tjm.cgh.horn.car": {"sounds": ["horn/car_horn"],"stream":true},
     "tjm.cgh.kiss.me.on.my.hot.mouth": {"sounds": ["horn/kiss_me_on_my_hot_mouth"],"stream":true},
     "tjm.cgh.fail.trumpet": {"sounds": ["horn/fail_trumpet"],"stream":true},
@@ -63,7 +62,6 @@
     "tjm.cgh.fuck_off_wanker": {"sounds": ["horn/fuck_off_wanker"],"stream":true},
     "tjm.cgh.so_cool": {"sounds": ["horn/so_cool"],"stream":true},
     "tjm.cgh.making_bacon": {"sounds": ["horn/making_bacon"],"stream":true},
-    
     "tjm.cgh.low_taper_fade": {"sounds": ["horn/low_taper_fade"],"stream":true},
     "tjm.cgh.la_do": {"sounds": ["horn/la_do"],"stream":true},
     "tjm.cgh.spongebob_fog_horn": {"sounds": ["horn/spongebob_fog_horn"],"stream":true},
