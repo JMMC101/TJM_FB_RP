@@ -6,6 +6,8 @@
     "tjm.arrow.parry": {"sounds": ["effects/arrow.parry"],"stream":true},
     "tjm.first.hit": {"sounds": ["effects/first.hit"],"stream":true},
     "tjm.night.jingle": {"sounds": ["effects/night.jingle"],"stream":true},
+    "tjm.item_sell": {"sounds": ["effects/sell"],"stream":true},
+
     "tjm.final_stand.heartbeat": {"sounds": ["effects/final_stand.heatbeat"],"stream":true},
 
 
