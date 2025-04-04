@@ -32,3 +32,15 @@ if 1:
         items_picamds,
         'frostbite:item/tool/pickaxe/'
     )
+
+if 1:
+    items_swords:list[str] = [
+        'wooden.shattered','wooden.baton','stone.healthy','stone.dagger','lightsaber','iron.longsword','iron.longsword.heavy'
+    ]
+
+
+    gen(
+        'assets/frostbite/items/weapon/sword/',
+        items_swords,
+        'frostbite:item/weapon/sword/'
+    )
