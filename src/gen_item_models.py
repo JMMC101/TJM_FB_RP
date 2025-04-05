@@ -40,6 +40,21 @@ if 1:
 
 
 if 1:
+    items_elytra_pieces:list[str] = [
+        '0','1','2','3','4','5','6','7','8'
+    ]
+
+
+    gen(
+        'assets/frostbite/models/item/other/broken_elytra_part/',
+        items_elytra_pieces,
+        'frostbite:item/other/broken_elytra_part/'
+    )
+
+
+
+
+if 1:
     states_crossbow:list[str] = [
         'standby',
         'pulling_0',
