@@ -586,5 +586,9 @@
 	"item.frostbite.junk.slime_block": "\u2022 Slime Block \u2022",
 	"item.frostbite.junk.slime_block.lore.0": "EWWWW!!!",
 	"item.frostbite.item.slime_block": "\u2022 Slime Block \u2022",
-	"item.frostbite.item.slime_block.lore.0": "EWWWW!!!"
+	"item.frostbite.item.slime_block.lore.0": "EWWWW!!!",
+	"item.frostbite.junk.wheat": "\u2022 Wheat \u2022",
+	"item.frostbite.junk.wheat.lore.0": "Somehow in this snowy hellhole",
+	"item.frostbite.junk.wheat.lore.1": "wheat has been harvested",
+	"item.frostbite.junk.wheat.lore.2": "and discarded, odd."
 }
