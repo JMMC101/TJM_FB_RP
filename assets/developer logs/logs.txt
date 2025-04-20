@@ -47,8 +47,15 @@ I feel like i have brain damage and Axa is leading my through it all since i don
 22/02/2025
 AXA: gay sex
 -----
-00/00/0000
-JM:
+07/04/2025
+JM: not feeling the best with frostbite development in general, i feel like im slowing down on work which i dont want to, everytime i make/fix something
+more bugs arise and its making me want to quit entirely, i feel as if all of the time and money i have put into this has gone to waste i would of been better
+off just doing the things i love rather then working on this, anyways no ones here for the sob story.
+
+Added custom horns, tweaked all classes, Added final stands, got all ores working, currently working on loot tables and crafting, i need to remake the shop buying
+system since i don't think anyone can find the original shop generator made 6 months ago, theres probably more but i cannot think straight while writing this.
+
+I currently hate working on this but i will keep going, hopefully i will start enjoying it again and it will improve my mental state.
 -----
 00/00/0000
 AXA:
