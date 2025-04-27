@@ -62,4 +62,8 @@ WHY ARE YOU BALD? ARE YOU OK?!
 Axa slide me a pint!
 Icy? i don't see...
 Mill? whos that?
+<<<<<<< HEAD
 Grandum style
+=======
+Grandum style
+>>>>>>> 16faaa85fc84d3f9909c969c8b3561db1b7e0429
