@@ -1,0 +1,14 @@
+{
+    "model": {
+      "type": "minecraft:condition",
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "frostbite:item/tool/fishing_rod/example"
+      },
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "frostbite:item/tool/fishing_rod/example_cast"
+      },
+      "property": "minecraft:fishing_rod/cast"
+    }
+  }
