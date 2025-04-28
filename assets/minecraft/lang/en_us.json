@@ -633,6 +633,7 @@
 	"item.frostbite.fishing_rod.pro": "\u2022 Pro Fishing Rod \u2022",
 	"item.frostbite.fishing_rod.pro.lore.0": "You may be addicted to fishing.",
 	"item.frostbite.item.fishing_frenzy.delivery_crate": "\u2022 Delivery Crate \u2022",
+<<<<<<< HEAD
 	"item.frostbite.item.fishing_frenzy.delivery_crate.lore.0": "Needs to be delivered to Fishing Frenzy.",
 	"item.frostbite.delivery_crate.fishing_frenzy": "\u2022 Delivery Crate \u2022",
 	"item.frostbite.delivery_crate.fishing_frenzy.lore.0": "Needs to be delivered to Fishing Frenzy.",
@@ -676,11 +677,8 @@
 	"item.frostbite.blasting.gold_ingot": "\u2022 Gold Ingot \u2022",
 	"item.frostbite.blasting.gold_ingot.lore.0": "Now this is worth 75 Coins,",
 	"item.frostbite.blasting.gold_ingot.lore.1": "now you just need to find a",
-	"item.frostbite.blasting.gold_ingot.lore.2": "place that want to buy it.",
-	"item.frostbite.item.sweet_berries": "\u2022 Sweet Berries \u2022",
-	"item.frostbite.item.sweet_berries.lore.0": "They look quite tasty, but it",
-	"item.frostbite.item.sweet_berries.lore.1": "is best you don't eat them...",
-	"item.frostbite.item.milk_bucket": "\u2022 Milk Bucket \u2022",
-	"item.frostbite.item.milk_bucket.lore.0": "yes it is milk, 99.9% certian...",
-	"item.frostbite.item.milk_bucket.lore.1": "its milk, trust me nothing else!"
+	"item.frostbite.blasting.gold_ingot.lore.2": "place that want to buy it."
+=======
+	"item.frostbite.item.fishing_frenzy.delivery_crate.lore.0": "Needs to be delivered to Fishing Frenzy."
+>>>>>>> 16faaa85fc84d3f9909c969c8b3561db1b7e0429
 }
