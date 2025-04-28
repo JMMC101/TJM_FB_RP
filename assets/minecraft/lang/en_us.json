@@ -13,6 +13,7 @@
 	"tooltip.short_attribute_name.armor": "DEF",
 	"tooltip.short_attribute_name.luck": "LUCK",
 	"tooltip.short_attribute_name.attack_speed": "ATS",
+	"tooltip.short_attribute_name.attack_speed": "ATS",
 	"tooltip.frostbite.can_break_header": "Can Break:",
 	"tooltip.frostbite.can_break.#frostbite:coal_ore": "Coal",
 	"tooltip.frostbite.can_break.#frostbite:iron_ore": "Iron",
