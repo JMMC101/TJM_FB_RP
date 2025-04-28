@@ -1,0 +1,6 @@
+{
+    "parent": "item/fishing_rod",
+    "textures": {
+        "layer0": "frostbite:item/tool/fishing_rod/example_cast"
+    }
+}

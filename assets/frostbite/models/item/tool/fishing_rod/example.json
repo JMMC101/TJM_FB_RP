@@ -1,0 +1,14 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "frostbite:item/tool/fishing_rod/example"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "cast": 1
+            },
+            "model": "frostbite:item/tool/fishing_rod/example_cast"
+        }
+    ]
+}
