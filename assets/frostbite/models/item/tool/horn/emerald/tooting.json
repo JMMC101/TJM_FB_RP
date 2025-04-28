@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/goat_horn",
+	"textures": {
+		"layer0": "frostbite:item/tool/horn/emerald/tooting"
+	}
+}
