@@ -8,6 +8,8 @@
     "tjm.night.jingle": {"sounds": ["effects/night.jingle"],"stream":true},
     "tjm.item_sell": {"sounds": ["effects/sell"],"stream":true},
 
+    "tjm.crossbow.overcharge": {"sounds": ["effects/crossbow.overcharge"],"stream":true},
+
     "tjm.final_stand.heartbeat": {"sounds": ["effects/final_stand.heatbeat"],"stream":true},
 
 

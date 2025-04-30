@@ -21,7 +21,11 @@
       ],
       "fallback": {
         "type": "minecraft:model",
+<<<<<<< HEAD
         "model": "frostbite:item/weapon/crossbow/minigun/standby"
+=======
+            "model": "frostbite:item/weapon/crossbow/minigun/standby"
+>>>>>>> 5aa20208e9e92b98deb9eb841b9edeaa63fc5900
       },
       "property": "minecraft:charge_type"
     },
