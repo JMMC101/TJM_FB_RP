@@ -1,6 +1,6 @@
 {
-	"parent": "minecraft:item/generated",
+	"parent": "frostbite:item/weapon/crossbow/generic",
 	"textures": {
-		"layer0": "assets/frostbite/textures/item/weapon/crossbow/broken/standby"
+		"layer0": "frostbite:item/weapon/crossbow/broken/standby"
 	}
 }

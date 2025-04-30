@@ -1,6 +1,6 @@
 {
-	"parent": "minecraft:item/generated",
+	"parent": "frostbite:item/weapon/crossbow/generic",
 	"textures": {
-		"layer0": "assets/frostbite/textures/item/weapon/crossbow/minigun/pulling_0"
+		"layer0": "frostbite:item/weapon/crossbow/minigun/pulling_0"
 	}
 }

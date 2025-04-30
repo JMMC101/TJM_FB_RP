@@ -21,7 +21,7 @@
       ],
       "fallback": {
         "type": "minecraft:model",
-        "model": "minecraft:item/crossbow"
+        "model": "frostbite:item/weapon/crossbow/broken/standby"
       },
       "property": "minecraft:charge_type"
     },
