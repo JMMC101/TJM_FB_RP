@@ -67,7 +67,8 @@ if 1:
     horn_types:list[str] = [
         'copper',
         'copper_carved',
-        'emerald',
+        #'emerald.standby',
+        #'emerald.tooting',
         'golden',
         'birds_birds_birds'
     ]

@@ -3,11 +3,11 @@
 		"type": "minecraft:condition",
 		"on_false": {
 			"type": "minecraft:model",
-			"model": "frostbite:item/tool/horn/golden.standby"
+			"model": "frostbite:item/tool/horn/yellow_cone.standby"
 		},
 		"on_true": {
 			"type": "minecraft:model",
-			"model": "frostbite:item/tool/horn/golden.tooting"
+			"model": "frostbite:item/tool/horn/yellow_cone.tooting"
 		},
 		"property": "minecraft:using_item"
 	}

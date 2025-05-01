@@ -1,6 +1,14 @@
 {
-    "model": {
-        "type": "model",
-        "model": "frostbite:item/tool/horn/birds_birds_birds"
-    }
+	"model": {
+		"type": "minecraft:condition",
+		"on_false": {
+			"type": "minecraft:model",
+			"model": "frostbite:item/tool/horn/birds_birds_birds.standby"
+		},
+		"on_true": {
+			"type": "minecraft:model",
+			"model": "frostbite:item/tool/horn/birds_birds_birds.tooting"
+		},
+		"property": "minecraft:using_item"
+	}
 }

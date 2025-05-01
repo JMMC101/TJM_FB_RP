@@ -1,5 +1,5 @@
 {
-	"parent": "frostbite:item/tool/horn/generic",
+	"parent": "frostbite:item/tool/horn/tooting",
 	"textures": {
 		"layer0": "frostbite:item/tool/horn/golden"
 	}

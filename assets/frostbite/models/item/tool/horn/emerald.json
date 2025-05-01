@@ -1,6 +1,0 @@
-{
-	"parent": "frostbite:item/tool/horn/generic",
-	"textures": {
-		"layer0": "frostbite:item/tool/horn/emerald"
-	}
-}

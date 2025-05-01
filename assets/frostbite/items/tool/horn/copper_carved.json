@@ -1,6 +1,14 @@
 {
-    "model": {
-        "type": "model",
-        "model": "frostbite:item/tool/horn/copper_carved"
-    }
+	"model": {
+		"type": "minecraft:condition",
+		"on_false": {
+			"type": "minecraft:model",
+			"model": "frostbite:item/tool/horn/copper_carved.standby"
+		},
+		"on_true": {
+			"type": "minecraft:model",
+			"model": "frostbite:item/tool/horn/copper_carved.tooting"
+		},
+		"property": "minecraft:using_item"
+	}
 }
