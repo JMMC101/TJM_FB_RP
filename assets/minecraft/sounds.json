@@ -70,6 +70,10 @@
     "tjm.cgh.la_do": {"sounds": ["horn/la_do"],"stream":true},
     "tjm.cgh.spongebob_fog_horn": {"sounds": ["horn/spongebob_fog_horn"],"stream":true},
     "tjm.cgh.birds_birds_birds": {"sounds": ["horn/birds_birds_birds"],"stream":true},
+    "tjm.cgh.bleeding_bullshit": {"sounds": ["horn/bleeding_bullshit"],"stream":true},
+    "tjm.cgh.where_the_hell": {"sounds": ["horn/where_the_hell"],"stream":true},
+    "tjm.cgh.lets_cut_the_crap": {"sounds": ["horn/lets_cut_the_crap"],"stream":true},
+    "tjm.cgh.forget": {"sounds": ["horn/forget"],"stream":true},
 
     "music.dragon": {"replace": true, "sounds": []},
     "music.game": {"replace": true, "sounds": []},
