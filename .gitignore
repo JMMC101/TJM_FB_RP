@@ -1,1 +1,5 @@
 assets/frostbite/textures/item/weapon/sword/DEPR
+*.png~
+*.kra
+.mcfunction
+assets/frostbite/textures/item/weapon/sword/DEPR
