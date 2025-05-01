@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+                "0": "frostbite:item/decoration/signs/milky_hut",
+		"particle": "frostbite:item/decoration/signs/milky_hut"
+	},
+	"elements": [
+		{
+			"from": [-4, 0, 8.5],
+			"to": [20, 13.5, 8.5],
+			"faces": {
+				"north": {"uv": [2, 1, 13.75, 14.5], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [13.75, 1, 2, 14.5], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"ground": {
+			"translation": [0, 4.75, 0]
+		},
+		"gui": {
+			"rotation": [0, 180, 0],
+			"translation": [0.25, -1, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"head": {
+			"rotation": [39, 0, 0],
+			"translation": [0, 3.5, -12.75]
+		},
+		"fixed": {
+			"translation": [0, -4, -1.75]
+		}
+	}
+}

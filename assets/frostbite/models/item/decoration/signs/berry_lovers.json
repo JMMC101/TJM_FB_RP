@@ -1,0 +1,22 @@
+{
+    "credit": "Made with Blockbench",
+    "texture_size": [32, 32],
+    "textures": {
+                "0": "frostbite:item/decoration/signs/berry_lovers",
+		"particle": "frostbite:item/decoration/signs/berry_lovers"
+    },
+    "elements": [
+    {
+    "from": [-12.5, 0, 7],
+    "to": [29.5, 17, 7.5],
+    "faces": {
+    "north": {"uv": [3, 5.875, 13.125, 10.07622], "texture": "#0"},
+    "east": {"uv": [1, 3.75, 2, 12.25], "texture": "#0"},
+    "south": {"uv": [13.125, 5.875, 3, 10.125], "texture": "#0"},
+    "west": {"uv": [1, 3.625, 2, 12.125], "texture": "#0"},
+    "up": {"uv": [0, 0, 16, 1], "texture": "#0"},
+    "down": {"uv": [0, 0, 16, 1], "texture": "#0"}
+    }
+    }
+    ]
+    }
