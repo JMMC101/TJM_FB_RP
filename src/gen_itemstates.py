@@ -22,7 +22,7 @@ if 0:
         'frostbite:item/tool/pickaxe/'
     )
 
-if 1:
+if 0:
     items_picamds:list[str] = [
         'amethyst'
     ]
@@ -33,7 +33,7 @@ if 1:
         'frostbite:item/tool/pickaxe/'
     )
 
-if 1:
+if 0:
     items_swords:list[str] = [
         'wooden.shattered','wooden.baton','stone.healthy','stone.dagger','lightsaber','iron.longsword','iron.longsword.heavy'
     ]
@@ -45,14 +45,17 @@ if 1:
         'frostbite:item/weapon/sword/'
     )
 
+
 if 1:
-    items_elytra_pieces:list[str] = [
-        '0','1','2','3','4','5','6','7','8'
+    horn_types:list[str] = [
+        'copper',
+        'copper_carved',
+        'emerald',
+        'golden',
+        'birds_birds_birds'
     ]
-
-
     gen(
-        'assets/frostbite/items/other/broken_elytra_part/',
-        items_elytra_pieces,
-        'frostbite:item/other/broken_elytra_part/'
+        'assets/frostbite/items/tool/horn/',
+        horn_types,
+        'frostbite:item/tool/horn/'
     )

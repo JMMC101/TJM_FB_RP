@@ -13,7 +13,7 @@ if 0:
     )
 
 
-if 1:
+if 0:
     items_pickaxes:list[str] = [
         'amethyst'
     ]
@@ -25,7 +25,7 @@ if 1:
         'frostbite:item/tool/pickaxe/'
     )
 
-if 1:
+if 0:
     items_swords:list[str] = [
         'wooden.shattered','wooden.baton','stone.healthy','stone.dagger','lightsaber','iron.longsword','iron.longsword.heavy'
     ]
@@ -39,22 +39,7 @@ if 1:
 
 
 
-if 1:
-    items_elytra_pieces:list[str] = [
-        '0','1','2','3','4','5','6','7','8'
-    ]
-
-
-    gen(
-        'assets/frostbite/models/item/other/broken_elytra_part/',
-        items_elytra_pieces,
-        'frostbite:item/other/broken_elytra_part/'
-    )
-
-
-
-
-if 1:
+if 0:
     states_crossbow:list[str] = [
         'standby',
         'pulling_0',
@@ -67,10 +52,29 @@ if 1:
     gen(
         'assets/frostbite/models/item/weapon/crossbow/broken/',
         states_crossbow,
-        'assets/frostbite/textures/item/weapon/crossbow/broken/'
+        'frostbite:item/weapon/crossbow/broken/',
+        parent_path='frostbite:item/weapon/crossbow/generic'
     )
     gen(
         'assets/frostbite/models/item/weapon/crossbow/minigun/',
         states_crossbow,
-        'assets/frostbite/textures/item/weapon/crossbow/minigun/'
+        'frostbite:item/weapon/crossbow/minigun/',
+        parent_path='frostbite:item/weapon/crossbow/generic'
+    )
+
+
+if 1:
+    horn_types:list[str] = [
+        'copper',
+        'copper_carved',
+        #'emerald.standby',
+        #'emerald.tooting',
+        'golden',
+        'birds_birds_birds'
+    ]
+    gen(
+        'assets/frostbite/models/item/tool/horn/',
+        horn_types,
+        'frostbite:item/tool/horn/',
+        parent_path='frostbite:item/tool/horn/generic'
     )

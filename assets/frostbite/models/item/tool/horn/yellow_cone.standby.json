@@ -1,0 +1,6 @@
+{
+	"parent": "frostbite:item/tool/horn/standby",
+	"textures": {
+		"layer0": "frostbite:item/tool/horn/yellow_cone"
+	}
+}

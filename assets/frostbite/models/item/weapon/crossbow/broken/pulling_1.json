@@ -1,5 +1,5 @@
 {
-	"parent": "minecraft:item/crossbow",
+	"parent": "frostbite:item/weapon/crossbow/generic",
 	"textures": {
 		"layer0": "frostbite:item/weapon/crossbow/broken/pulling_1"
 	}
