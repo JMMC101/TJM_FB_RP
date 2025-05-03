@@ -1,6 +1,6 @@
 {
   "model": {
       "type": "model",
-      "model": "frostbite:item/decoration/signs/flakestop"
+      "model": "frostbite:decoration/signs/flakestop"
   }
 }

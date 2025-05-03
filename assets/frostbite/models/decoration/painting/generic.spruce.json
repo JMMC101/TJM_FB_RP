@@ -1,0 +1,6 @@
+{
+    "parent": "frostbite:decoration/generic",
+    "textures": {
+        "frame": "frostbite:decoration/painting/frame.spruce"
+    }
+}

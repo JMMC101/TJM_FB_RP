@@ -2,8 +2,8 @@
     "credit": "Made with Blockbench",
     "texture_size": [32, 32],
     "textures": {
-                "0": "frostbite:item/decoration/signs/berry_lovers",
-		"particle": "frostbite:item/decoration/signs/berry_lovers"
+                "0": "frostbite:decoration/signs/berry_lovers",
+		"particle": "frostbite:decoration/signs/berry_lovers"
     },
     "elements": [
     {

@@ -46,7 +46,7 @@ if 0:
     )
 
 
-if 1:
+if 0:
     horn_types:list[str] = [
         'copper',
         'copper_carved',
@@ -58,4 +58,15 @@ if 1:
         'assets/frostbite/items/tool/horn/',
         horn_types,
         'frostbite:item/tool/horn/'
+    )
+
+if 1:
+    painting_types:list[str] = [
+        'debug',
+        'debug2'
+    ]
+    gen(
+        'assets/frostbite/items/decoration/painting/',
+        painting_types,
+        'frostbite:decoration/painting'
     )

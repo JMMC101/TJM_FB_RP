@@ -2,8 +2,8 @@
 		"credit": "JMMC101",
 		"texture_size": [64, 64],
 		"textures": {
-			"0": "frostbite:item/decoration/signs/flakestop",
-			"particle": "frostbite:item/decoration/signs/flakestop"
+			"0": "frostbite:decoration/signs/flakestop",
+			"particle": "frostbite:decoration/signs/flakestop"
 	},
 
 	"elements": [

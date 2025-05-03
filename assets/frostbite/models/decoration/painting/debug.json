@@ -1,0 +1,6 @@
+{
+    "parent": "frostbite:decoration/generic.spruce",
+    "textures": {
+        "contents": "frostbite:decoration/painting/debug"
+    }
+}

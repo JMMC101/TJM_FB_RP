@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-                "0": "frostbite:item/decoration/signs/milky_hut",
-		"particle": "frostbite:item/decoration/signs/milky_hut"
+                "0": "frostbite:decoration/signs/milky_hut",
+		"particle": "frostbite:decoration/signs/milky_hut"
 	},
 	"elements": [
 		{

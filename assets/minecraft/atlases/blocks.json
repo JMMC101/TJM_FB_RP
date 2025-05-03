@@ -4,6 +4,11 @@
             "type": "directory",
             "prefix": "skybox/",
             "source": "skybox"
+        },
+        {
+            "type": "directory",
+            "prefix": "decoration/",
+            "source": "decoration"
         }
     ]
 }

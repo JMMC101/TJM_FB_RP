@@ -1,6 +1,6 @@
 {
   "model": {
       "type": "model",
-      "model": "frostbite:item/decoration/signs/berry_lovers"
+      "model": "frostbite:decoration/signs/berry_lovers"
   }
 }

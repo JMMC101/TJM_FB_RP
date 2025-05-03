@@ -1,6 +1,6 @@
 {
   "model": {
       "type": "model",
-      "model": "frostbite:item/decoration/signs/milky_hut"
+      "model": "frostbite:decoration/signs/milky_hut"
   }
 }
