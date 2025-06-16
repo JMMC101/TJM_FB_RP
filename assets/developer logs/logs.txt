@@ -57,8 +57,10 @@ system since i don't think anyone can find the original shop generator made 6 mo
 
 I currently hate working on this but i will keep going, hopefully i will start enjoying it again and it will improve my mental state.
 -----
-00/00/0000
-AXA:
+16/06/2025
+JM: development is going better then before, my mental state has gotten better too, im not really sure what has been added since ive not been keeping track, i've
+been pretty focused on my job, got custom armor working thanks to Axa, new crafting system is in the works, trying to get DorkOrcs code working, custom Paintings
+are now added, refrences include Axa, REPO and ATLYSS, planning to refrence celsete, shovel knight and omori. Added even more horns, optimised it too.
 -----
 00/00/0000
 JM:
