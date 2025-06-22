@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "frostbite:copper.oxidized"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "frostbite:copper.oxidized"
+      }
+    ]
+  }
+}

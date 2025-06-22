@@ -74,6 +74,8 @@
     "tjm.cgh.where_the_hell": {"sounds": ["horn/where_the_hell"],"stream":true},
     "tjm.cgh.lets_cut_the_crap": {"sounds": ["horn/lets_cut_the_crap"],"stream":true},
     "tjm.cgh.forget": {"sounds": ["horn/forget"],"stream":true},
+    "tjm.cgh.axa_fart_i_think": {"sounds": ["horn/axa_fart_i_think"],"stream":true},
+    "tjm.cgh.i_am_steve": {"sounds": ["horn/i_am_steve"],"stream":true},
 
     "music.dragon": {"replace": true, "sounds": []},
     "music.game": {"replace": true, "sounds": []},
