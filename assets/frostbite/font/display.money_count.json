@@ -1,0 +1,11 @@
+{
+    "providers": [
+		{
+			"type": "bitmap",
+			"file": "frostbite:gui/numbers.png",
+			"ascent": -48,
+			"height": 8,
+			"chars": ["0123456789ABCDEF"]
+		}
+    ]
+}

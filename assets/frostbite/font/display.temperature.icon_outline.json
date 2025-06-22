@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+			"type": "bitmap",
+			"file": "frostbite:gui/temperature_outline.png",
+			"ascent": -10,
+			"height": 18,
+			"chars": [
+                "0123456"
+            ]
+		}
+    ]
+}

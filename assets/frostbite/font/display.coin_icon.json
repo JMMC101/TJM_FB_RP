@@ -1,0 +1,19 @@
+{
+    "providers": [
+		{
+			"type": "bitmap",
+			"file": "frostbite:gui/gold_coin.png",
+			"ascent": -44,
+			"height": 16,
+			"chars": ["01"]
+		},
+		{
+			"type": "space",
+			"advances": {
+				"-": -15,
+				"<": -140,
+				">":  140
+			}
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "frostbite:gui/stamina.png",
+			"ascent": 0,
+			"height": 9,
+			"chars": ["01234","56789"]
+		}
+	]
+}

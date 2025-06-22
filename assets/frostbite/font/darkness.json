@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/darkness.png",
+            "height": 200,
+            "ascent": 70,
+            "chars": [
+                "\uE001"
+            ]
+        }
+    ]
+}
