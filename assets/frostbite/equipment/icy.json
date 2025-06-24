@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "frostbite:icy"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "frostbite:icy"
+      }
+    ]
+  }
+}
