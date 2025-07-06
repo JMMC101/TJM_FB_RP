@@ -251,9 +251,9 @@ void main() {
             case 1:
             if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
             fragColor = vec4(
-                abs(moon_light_color.g) < 1e-10 ? 1.0 : 0.0,
-                -sign(moon_light_color.g),
-                isnan(moon_light_color.g),
+                abs(moon_area_factor) < 1e-10 ? 1.0 : 0.0,
+                -sign(moon_area_factor),
+                isnan(moon_area_factor),
                 1.0
             ); break;
 
@@ -268,7 +268,7 @@ void main() {
 
             case 3:
             fragColor = vec4(
-                isnan(0.0),
+                rotated_normalized_world_pos.y,
                 isnan(0.0*1e1000000),
                 isnan(asin(-23.34354)),
                 1.0
