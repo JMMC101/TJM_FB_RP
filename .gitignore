@@ -3,4 +3,5 @@ assets/frostbite/textures/item/weapon/sword/DEPR
 *.kra
 .mcfunction
 assets/frostbite/textures/item/weapon/sword/DEPR
-.bak
+*.bak
+*.strip
