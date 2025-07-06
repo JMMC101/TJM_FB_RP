@@ -35,6 +35,11 @@ flat in int object_type;
 
 out vec4 fragColor;
 
+float non_asin(float x) {
+    float y = x*x*x;
+    return x + y*y*0.5;
+}
+
 vec2 get_recived_size() {
     vec2 corner0 = pos_xz_0.xy / pos_xz_0.z;
     vec2 corner1 = pos_xz_1.xy / pos_xz_1.z;
@@ -145,7 +150,7 @@ void main() {
         //    clamp(floor((0.1-celestial_body_dist)*48.0) * moon_area_factor, 0.0,1.0)
         //);
         moon *= moon.a * clamp((0.1-celestial_body_dist)*48.0 * moon_area_factor, 0.0,1.0);
-        moon_area_factor = min(asin(clamp(moon_area_factor, -1.0, 1.0)) / 1.57, 1.0);
+        moon_area_factor = min(non_asin(clamp(moon_area_factor, -1.0, 1.0)) / 1.57, 1.0);
         moon_area_factor *= moon_area_factor;
         moon_area_factor *= moon_area_factor;
         moon_area_factor *= moon_area_factor;
@@ -153,7 +158,9 @@ void main() {
         moon.rgb += vec3(moon_area_factor * (1.0 - moon.a));
         moon.rgb *= moon_light_color;
 
-        //color_stars.rgb *= (1.0 - moon.a);  // makes the moob block stars
+        color_stars.rgb *= (1.0 - moon.a);
+
+        //color_stars.rgb *= (1.0 - moon.a);  // makes the moon block stars
 
 
         //fragColor = vec4(vec3(1.0), sun); return;
@@ -226,6 +233,12 @@ void main() {
             pow(mod_heightD, 8.0) * sunsetrise_factor * (0.9 + rotated_normalized_world_pos.y*0.1)
         );
 
+
+
+
+
+
+
         //fragColor = vec4(float(int(gl_FragCoord.x) & 3)/4.0, 0.0, 0.0, 1.0); return;
 
         bool reference = (int(gl_FragCoord.y) & 7) == 0;
@@ -239,6 +252,8 @@ void main() {
         );
 
         switch (int(gl_FragCoord.x) & 3) {
+
+            // RED MARKER
             case 0:
             if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
             fragColor = vec4(
@@ -248,6 +263,7 @@ void main() {
                 1.0
             ); break;
 
+            // GREEN MARKER
             case 1:
             if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
             fragColor = vec4(
@@ -257,15 +273,17 @@ void main() {
                 1.0
             ); break;
 
+            // BLUE MARKER
             case 2:
             if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
             fragColor = vec4(
                 abs(final_test_color.b) < 1e-10 ? 1.0 : 0.0,
-                -sign(final_test_color.b),
+                isnan(col2.b),
                 isnan(final_test_color.b),
                 1.0
             ); break;
 
+            // NO MARKER
             case 3:
             fragColor = vec4(
                 rotated_normalized_world_pos.y,
