@@ -4,9 +4,9 @@
 #moj_import <minecraft:fog.glsl>
 #moj_import <frostbite:matrices.glsl>
 
-#define halfpi 1.5707963267948966
-#define pi 3.141592653589793
-#define tau 6.283185307179586
+#define halfpi  1.5707963267948966
+#define pi      3.141592653589793
+#define tau     6.283185307179586
 
 #define SKYBOX_TILE_SIZE 256*3
 #define SKYBOX_SIZE_X    256*3 *3

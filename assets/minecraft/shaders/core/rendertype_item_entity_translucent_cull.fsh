@@ -76,8 +76,8 @@ void main() {
         //fragColor = vec4(fract(texCoord0* 8.0), 0.0, 1.0); return;
         //fragColor = vec4(fract(moon_center_uv* 1024.35466), 0.0, 1.0); return;
         //fragColor = vec4(moon_center_uv, 0.0, 1.0); return;
-        vec3 sky_color0 = texture(Sampler0, texCoord0).rgb;
-        //if (sky_color0.g - (sky_color0.r + sky_color0.b) > 0.5) {
+        vec3 color_stars = texture(Sampler0, texCoord0).rgb;
+        //if (color_stars.g - (color_stars.r + color_stars.b) > 0.5) {
         //    fragColor = vec4(1.0);
         //    return;
         //}
@@ -95,9 +95,9 @@ void main() {
         mod_heightF = 1.0 - mod_heightF;
         mod_heightF *= mod_heightF;
         mod_heightF *= mod_heightF + breakup;
-        sky_color0 += vec3(0.2, 0.18, 0.3) * mod_heightF * 0.1;
+        color_stars += vec3(0.2, 0.18, 0.3) * mod_heightF * 0.1;
         mod_heightF *= mod_heightF;
-        sky_color0 += vec3(0.31, 0.23, 0.3) * mod_heightF * 0.1;
+        color_stars += vec3(0.31, 0.23, 0.3) * mod_heightF * 0.1;
 
 
         float mod_heightA = cubic_in_out(clamp((normalized_world_pos.y - 0.05) * 3.0, 0.0, 1.0));
@@ -122,11 +122,11 @@ void main() {
             mod_heightE
         );
         mod_heightE *= mod_heightE;
-        moon_light_color = mix(
+        moon_light_color = max(mix(
             moon_light_color,
             vec3(1.0, 0.5, 0.2),
             mod_heightE
-        );
+        ), 0.0);  //CHANGE
         //fragColor = vec4(moon_light_color, 1.0); return;
 
         vec3 rotated_normalized_world_pos = rotateZ(recived_data) * normalized_world_pos;
@@ -145,7 +145,7 @@ void main() {
         //    clamp(floor((0.1-celestial_body_dist)*48.0) * moon_area_factor, 0.0,1.0)
         //);
         moon *= moon.a * clamp((0.1-celestial_body_dist)*48.0 * moon_area_factor, 0.0,1.0);
-        moon_area_factor = min(asin(moon_area_factor) / 1.57, 1.0);
+        moon_area_factor = min(asin(clamp(moon_area_factor, -1.0, 1.0)) / 1.57, 1.0);
         moon_area_factor *= moon_area_factor;
         moon_area_factor *= moon_area_factor;
         moon_area_factor *= moon_area_factor;
@@ -153,7 +153,7 @@ void main() {
         moon.rgb += vec3(moon_area_factor * (1.0 - moon.a));
         moon.rgb *= moon_light_color;
 
-        //sky_color0.rgb *= (1.0 - moon.a);  // makes the moob block stars
+        //color_stars.rgb *= (1.0 - moon.a);  // makes the moob block stars
 
 
         //fragColor = vec4(vec3(1.0), sun); return;
@@ -231,7 +231,7 @@ void main() {
         bool reference = (int(gl_FragCoord.y) & 7) == 0;
 
         vec4 final_test_color = vec4(
-            mix(sky_color0, col2, daynight_factor)
+            mix(color_stars, col2, daynight_factor)
             + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
             + vec3(sun, sun*sun, sun*0.3)
             + moon.rgb,
@@ -268,7 +268,7 @@ void main() {
 
             case 3:
             fragColor = vec4(
-                isnan(1.0/0.0),
+                isnan(0.0),
                 isnan(0.0*1e1000000),
                 isnan(asin(-23.34354)),
                 1.0
@@ -344,7 +344,7 @@ void main() {
         //}; return;
 
         fragColor = vec4(
-            mix(sky_color0, col2, daynight_factor)
+            mix(color_stars, col2, daynight_factor)
             + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
             + vec3(sun, sun*sun, sun*0.3)
             + moon.rgb,
