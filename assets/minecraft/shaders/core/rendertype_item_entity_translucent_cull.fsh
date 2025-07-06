@@ -127,11 +127,11 @@ void main() {
             mod_heightE
         );
         mod_heightE *= mod_heightE;
-        moon_light_color = max(mix(
+        moon_light_color = mix(
             moon_light_color,
             vec3(1.0, 0.5, 0.2),
             mod_heightE
-        ), 0.0);  //CHANGE
+        );
         //fragColor = vec4(moon_light_color, 1.0); return;
 
         vec3 rotated_normalized_world_pos = rotateZ(recived_data) * normalized_world_pos;
@@ -251,7 +251,7 @@ void main() {
             1.0
         );
 
-        switch (int(gl_FragCoord.x) & 3) {
+        switch (int(gl_FragCoord.x) & 7) {
 
             // RED MARKER
             case 0:
@@ -286,11 +286,44 @@ void main() {
             // NO MARKER
             case 3:
             fragColor = vec4(
-                rotated_normalized_world_pos.y,
+                isnan(log2(0.0)),
                 isnan(0.0*1e1000000),
                 isnan(asin(-23.34354)),
                 1.0
-            );
+            ); break;
+
+            // MAGENTA MARKER
+            case 4:
+            if (reference) { fragColor = vec4(1.0,0.0,1.0,1.0); break; }
+            fragColor = vec4(
+                log2(abs(mod_heightD)) / 255.0,
+                -log2(abs(mod_heightD)) / 255.0,
+                mod_heightD,
+                1.0
+            ); break;
+
+            // YELLOW MARKER
+            case 5:
+            if (reference) { fragColor = vec4(1.0,1.0,0.0,1.0); break; }
+            fragColor = vec4(
+                log2(abs(col1.b)) / 255.0,
+                -log2(abs(col1.b)) / 255.0,
+                col1.b,
+                1.0
+            ); break;
+
+            // CYAN MARKER
+            case 6:
+            if (reference) { fragColor = vec4(0.0,1.0,1.0,1.0); break; }
+            fragColor = vec4(
+                log2(abs(sunsetrise_factor)) / 255.0,
+                -log2(abs(sunsetrise_factor)) / 255.0,
+                sunsetrise_factor,
+                1.0
+            ); break;
+
+            case 7:
+            fragColor = vec4(moon.rgb, 1.0); break;
         }
         return;
 
