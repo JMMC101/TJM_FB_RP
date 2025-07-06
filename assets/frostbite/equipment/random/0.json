@@ -2,12 +2,12 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "frostbite:leather.torn"
+        "texture": "frostbite:random/0"
       }
     ],
     "humanoid_leggings": [
       {
-        "texture": "frostbite:leather.torn"
+        "texture": "frostbite:random/0"
       }
     ]
   }
