@@ -1,4 +1,6 @@
 {
+    "tjm.armor.drip.money_loss": {"sounds": ["effects/armor.drip.money_loss"],"stream":true},
+
     "tjm.metal.door": {"sounds": ["effects/metal.door"],"stream":true},
     "tjm.day.jingle": {"sounds": ["effects/day.jingle"],"stream":true},
     "tjm.passages": {"sounds": ["effects/passages"],"stream":true},
@@ -7,6 +9,8 @@
     "tjm.first.hit": {"sounds": ["effects/first.hit"],"stream":true},
     "tjm.night.jingle": {"sounds": ["effects/night.jingle"],"stream":true},
     "tjm.item_sell": {"sounds": ["effects/sell"],"stream":true},
+
+    "tjm.jm_arrival": {"sounds": ["misc/jm_arrival"],"stream":true},
 
     "tjm.crossbow.overcharge": {"sounds": ["effects/crossbow.overcharge"],"stream":true},
 
