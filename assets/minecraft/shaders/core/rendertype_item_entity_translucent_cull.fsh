@@ -277,8 +277,8 @@ void main() {
             case 2:
             if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
             fragColor = vec4(
-                abs(final_test_color.b) < 1e-10 ? 1.0 : 0.0,
-                isnan(col2.b),
+                isnan(col0.b),
+                isnan(col1.b),
                 isnan(final_test_color.b),
                 1.0
             ); break;
