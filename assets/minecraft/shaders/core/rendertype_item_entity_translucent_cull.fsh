@@ -260,9 +260,9 @@ void main() {
             case 0:
             if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
             fragColor = vec4(
-                isz(daynight_factor),
-                -sign(daynight_factor),
-                isnan(daynight_factor),
+                isz(glow),
+                -sign(glow),
+                isnan(glow),
                 1.0
             ); break;
 
@@ -281,7 +281,7 @@ void main() {
             if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
             fragColor = vec4(
                 isnan(color_stars.b),
-                isnan(0.0),
+                isnan(mod_heightC * sunsetrise_factor * (0.55 + rotated_normalized_world_pos.y*0.5)),
                 isnan(final_test_color.b),
                 1.0
             ); break;
@@ -320,9 +320,9 @@ void main() {
             case 6:
             if (reference) { fragColor = vec4(0.0,1.0,1.0,1.0); break; }
             fragColor = vec4(
-                log2(abs(sunsetrise_factor)) / 255.0,
-                -log2(abs(sunsetrise_factor)) / 255.0,
-                isz(sunsetrise_factor),
+                log2(abs(moon_area_factor)) / 255.0,
+                -log2(abs(moon_area_factor)) / 255.0,
+                isz(moon_area_factor),
                 1.0
             ); break;
 
