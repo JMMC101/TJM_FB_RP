@@ -198,7 +198,7 @@ void main() {
 
 
         float mod_heightC = 1.0 - max(normalized_world_pos.y, 0.0);
-        float mod_heightD = 1.0 - max(normalized_world_pos.y*1.6 + 0.25, 0.0);
+        float mod_heightD =  max(1.0 - max(normalized_world_pos.y*1.6 + 0.25, 0.0), 0.0);
         //fragColor = vec4(vec3(mod_heightD), 1.0); return;
 
         vec3 col_1 = mix(
