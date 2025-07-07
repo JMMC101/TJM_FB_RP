@@ -175,7 +175,11 @@ void main() {
 
         //vec3 color2 = mix(color0, color1, recived_data);
 
-        float glow = pow(dot(rotated_normalized_world_pos, vec3(0.0, 1.0, 0.0)), 16.0) * sun_area_factor;
+        float glow = pow(max(rotated_normalized_world_pos.y, 0.0), 16.0) * sun_area_factor;
+        //fragColor = vec4(
+        //    vec3( dot(rotated_normalized_world_pos, vec3(0.0, 1.0, 0.0)) ),
+        //    1.0
+        //); return;
 
         
         float daynight_factor = clamp(
