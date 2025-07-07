@@ -248,92 +248,92 @@ void main() {
 
         //fragColor = vec4(float(int(gl_FragCoord.x) & 3)/4.0, 0.0, 0.0, 1.0); return;
 
-        bool reference = (int(gl_FragCoord.y) & 7) == 0;
-
-        vec4 final_test_color = vec4(
-            mix(color_stars, col2, daynight_factor)
-            + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
-            + vec3(sun, sun*sun, sun*0.3)
-            + moon.rgb,
-            1.0
-        );
-
-        switch (int(gl_FragCoord.x) & 7) {
-
-            // RED MARKER
-            case 0:
-            if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
-            fragColor = vec4(
-                isz(glow),
-                -sign(glow),
-                isnan(glow),
-                1.0
-            ); break;
-
-            // GREEN MARKER
-            case 1:
-            if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
-            fragColor = vec4(
-                isz(rotated_normalized_world_pos.y),
-                -sign(rotated_normalized_world_pos.y),
-                isnan(rotated_normalized_world_pos.y),
-                1.0
-            ); break;
-
-            // BLUE MARKER
-            case 2:
-            if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
-            fragColor = vec4(
-                isnan(color_stars.b),
-                isnan(mod_heightC * sunsetrise_factor * (0.55 + rotated_normalized_world_pos.y*0.5)),
-                isnan(final_test_color.b),
-                1.0
-            ); break;
-
-            // GRAY MARKER
-            case 3:
-            if (reference) { fragColor = vec4(0.5,0.5,0.5,1.0); break; }
-            fragColor = vec4(
-                isnan(pow(-0.3243, 8.0)),
-                isnan(0.0*1e1000000),
-                isnan(asin(-23.34354)),
-                1.0
-            ); break;
-
-            // MAGENTA MARKER
-            case 4:
-            if (reference) { fragColor = vec4(1.0,0.0,1.0,1.0); break; }
-            fragColor = vec4(
-                log2(abs(mod_heightD)),
-                -log2(abs(mod_heightD)),
-                -mod_heightD,
-                1.0
-            ); break;
-
-            // YELLOW MARKER
-            case 5:
-            if (reference) { fragColor = vec4(1.0,1.0,0.0,1.0); break; }
-            fragColor = vec4(
-                log2(abs(col1.b)) / 255.0,
-                -log2(abs(col1.b)) / 255.0,
-                isz(col1.b),
-                1.0
-            ); break;
-
-            // CYAN MARKER
-            case 6:
-            if (reference) { fragColor = vec4(0.0,1.0,1.0,1.0); break; }
-            fragColor = vec4(
-                log2(abs(moon_area_factor)) / 255.0,
-                -log2(abs(moon_area_factor)) / 255.0,
-                isz(moon_area_factor),
-                1.0
-            ); break;
-
-            case 7:
-            fragColor = vec4(moon.rgb, 1.0); break;
-        }
-        return;
+        //////bool reference = (int(gl_FragCoord.y) & 7) == 0;
+//////
+        //////vec4 final_test_color = vec4(
+        //////    mix(color_stars, col2, daynight_factor)
+        //////    + vec3(glow*0.3, glow*glow*0.4, glow*0.1)
+        //////    + vec3(sun, sun*sun, sun*0.3)
+        //////    + moon.rgb,
+        //////    1.0
+        //////);
+//////
+        //////switch (int(gl_FragCoord.x) & 7) {
+//////
+        //////    // RED MARKER
+        //////    case 0:
+        //////    if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
+        //////    fragColor = vec4(
+        //////        isz(glow),
+        //////        -sign(glow),
+        //////        isnan(glow),
+        //////        1.0
+        //////    ); break;
+//////
+        //////    // GREEN MARKER
+        //////    case 1:
+        //////    if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
+        //////    fragColor = vec4(
+        //////        isz(rotated_normalized_world_pos.y),
+        //////        -sign(rotated_normalized_world_pos.y),
+        //////        isnan(rotated_normalized_world_pos.y),
+        //////        1.0
+        //////    ); break;
+//////
+        //////    // BLUE MARKER
+        //////    case 2:
+        //////    if (reference) { fragColor = vec4(0.0,0.0,1.0,1.0); break; }
+        //////    fragColor = vec4(
+        //////        isnan(color_stars.b),
+        //////        isnan(mod_heightC * sunsetrise_factor * (0.55 + rotated_normalized_world_pos.y*0.5)),
+        //////        isnan(final_test_color.b),
+        //////        1.0
+        //////    ); break;
+//////
+        //////    // GRAY MARKER
+        //////    case 3:
+        //////    if (reference) { fragColor = vec4(0.5,0.5,0.5,1.0); break; }
+        //////    fragColor = vec4(
+        //////        isnan(pow(-0.3243, 8.0)),
+        //////        isnan(0.0*1e1000000),
+        //////        isnan(asin(-23.34354)),
+        //////        1.0
+        //////    ); break;
+//////
+        //////    // MAGENTA MARKER
+        //////    case 4:
+        //////    if (reference) { fragColor = vec4(1.0,0.0,1.0,1.0); break; }
+        //////    fragColor = vec4(
+        //////        log2(abs(mod_heightD)),
+        //////        -log2(abs(mod_heightD)),
+        //////        -mod_heightD,
+        //////        1.0
+        //////    ); break;
+//////
+        //////    // YELLOW MARKER
+        //////    case 5:
+        //////    if (reference) { fragColor = vec4(1.0,1.0,0.0,1.0); break; }
+        //////    fragColor = vec4(
+        //////        log2(abs(col1.b)) / 255.0,
+        //////        -log2(abs(col1.b)) / 255.0,
+        //////        isz(col1.b),
+        //////        1.0
+        //////    ); break;
+//////
+        //////    // CYAN MARKER
+        //////    case 6:
+        //////    if (reference) { fragColor = vec4(0.0,1.0,1.0,1.0); break; }
+        //////    fragColor = vec4(
+        //////        log2(abs(moon_area_factor)) / 255.0,
+        //////        -log2(abs(moon_area_factor)) / 255.0,
+        //////        isz(moon_area_factor),
+        //////        1.0
+        //////    ); break;
+//////
+        //////    case 7:
+        //////    fragColor = vec4(moon.rgb, 1.0); break;
+        //////}
+        //////return;
 
         //switch (int(gl_FragCoord.x) & 3) {
         //    case 0:
