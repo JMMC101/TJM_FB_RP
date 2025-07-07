@@ -290,7 +290,7 @@ void main() {
             case 3:
             if (reference) { fragColor = vec4(0.5,0.5,0.5,1.0); break; }
             fragColor = vec4(
-                isnan(pow(-1.3243, 8.0)),
+                isnan(pow(-0.3243, 8.0)),
                 isnan(0.0*1e1000000),
                 isnan(asin(-23.34354)),
                 1.0
@@ -300,9 +300,9 @@ void main() {
             case 4:
             if (reference) { fragColor = vec4(1.0,0.0,1.0,1.0); break; }
             fragColor = vec4(
-                log2(abs(mod_heightD)) / 255.0,
-                -log2(abs(mod_heightD)) / 255.0,
-                sign(mod_heightD),
+                log2(abs(mod_heightD)),
+                -log2(abs(mod_heightD)),
+                -mod_heightD,
                 1.0
             ); break;
 
