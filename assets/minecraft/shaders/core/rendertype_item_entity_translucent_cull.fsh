@@ -40,6 +40,9 @@ float non_asin(float x) {
     return x + y*y*0.5;
 }
 
+float isctz(float x) { return abs(x) < 1e-10 ? 1.0 : 0.0; }
+float isz(float x) { return x == 0.0 ? 1.0 : 0.0; }
+
 vec2 get_recived_size() {
     vec2 corner0 = pos_xz_0.xy / pos_xz_0.z;
     vec2 corner1 = pos_xz_1.xy / pos_xz_1.z;
@@ -257,7 +260,7 @@ void main() {
             case 0:
             if (reference) { fragColor = vec4(1.0,0.0,0.0,1.0); break; }
             fragColor = vec4(
-                abs(moon.r) < 1e-10 ? 1.0 : 0.0,
+                isctz(moon.r),
                 -sign(moon.r),
                 isnan(moon.r),
                 1.0
@@ -267,7 +270,7 @@ void main() {
             case 1:
             if (reference) { fragColor = vec4(0.0,1.0,0.0,1.0); break; }
             fragColor = vec4(
-                abs(moon_area_factor) < 1e-10 ? 1.0 : 0.0,
+                isctz(moon_area_factor),
                 -sign(moon_area_factor),
                 isnan(moon_area_factor),
                 1.0
@@ -286,7 +289,7 @@ void main() {
             // NO MARKER
             case 3:
             fragColor = vec4(
-                isnan(log2(0.0)),
+                isnan(pow(-1.3243, 8.0)),
                 isnan(0.0*1e1000000),
                 isnan(asin(-23.34354)),
                 1.0
@@ -298,7 +301,7 @@ void main() {
             fragColor = vec4(
                 log2(abs(mod_heightD)) / 255.0,
                 -log2(abs(mod_heightD)) / 255.0,
-                mod_heightD,
+                sign(mod_heightD),
                 1.0
             ); break;
 
@@ -308,7 +311,7 @@ void main() {
             fragColor = vec4(
                 log2(abs(col1.b)) / 255.0,
                 -log2(abs(col1.b)) / 255.0,
-                col1.b,
+                isz(col1.b),
                 1.0
             ); break;
 
@@ -318,7 +321,7 @@ void main() {
             fragColor = vec4(
                 log2(abs(sunsetrise_factor)) / 255.0,
                 -log2(abs(sunsetrise_factor)) / 255.0,
-                sunsetrise_factor,
+                isz(sunsetrise_factor),
                 1.0
             ); break;
 
