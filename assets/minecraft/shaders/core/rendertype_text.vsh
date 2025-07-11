@@ -17,7 +17,6 @@ in ivec2 UV2;
 #define RESCALE_TRIGGER (42 << 16) | (69 << 8) | 0
 #define RESCALE_TRIGGER_SHADOW (10 << 16) | (17 << 8) | 0
 
-C:\Users\admin\AppData\Roaming\.minecraft\resourcepacks\tjm_rp_2025_a\assets\minecraft\shaders\core
 uniform sampler2D Sampler0;
 uniform sampler2D Sampler2;
 
