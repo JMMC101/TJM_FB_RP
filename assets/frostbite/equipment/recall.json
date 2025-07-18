@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "frostbite:recall"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "frostbite:recall"
+      }
+    ]
+  }
+}
