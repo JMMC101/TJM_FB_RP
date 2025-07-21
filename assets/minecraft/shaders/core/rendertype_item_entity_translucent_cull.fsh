@@ -115,7 +115,8 @@ void main() {
         mod_heightB *= mod_heightB;
 
         vec3 sky_color1 = mix(
-            vec3(0.8, 0.85, 0.9),
+            //vec3(0.8, 0.85, 0.9),
+            FogColor.rgb,
             vec3(0.65, 0.6, 0.8),
             mod_heightA
         ) + vec3(
