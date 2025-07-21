@@ -1,0 +1,14 @@
+{
+	"model": {
+		"type": "minecraft:condition",
+		"on_false": {
+			"type": "minecraft:model",
+			"model": "frostbite:item/tool/horn/axa.standby"
+		},
+		"on_true": {
+			"type": "minecraft:model",
+			"model": "frostbite:item/tool/horn/axa.tooting"
+		},
+		"property": "minecraft:using_item"
+	}
+}
