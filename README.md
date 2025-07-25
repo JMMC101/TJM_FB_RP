@@ -1,24 +1,13 @@
-Frostbites offical resource pack that all testers should use when play-testing
-
-unless your name is Alex and you modify it, then fair enough. ¯\\_(ツ)_/¯
-   
-REMINDER: Sodium will mess with the skybox, we suggest not using it.
--
--
--
--
--
--
--
--
--
--
-
-# TJM Frostbite | Dev-Log 44 | 26/05/2025
-Nothing much, me and Axa just like got armor working, i'll be coding them all now.
+# Welcome to Frostbite's offical page!
+Remember that everything is a work in progress, if you are planning on reporting a bug or a glitch you have found, make sure you are on the recommended RP and Mods.
+> [!WARNING]
+> Sodium will mess with the skybox, we suggest not using it.
+#
+### TJM Frostbite | Dev-Log 44 | 26/05/2025
+Nothing much, me and Axa just like got armor working, i'll be coding them all now
 Been working on some more secretive areas, I'd rather not spoil.
 
-# TJM Frostbite | Dev-Log 43 | 11/05/2025 
+### TJM Frostbite | Dev-Log 43 | 11/05/2025 
 - Recoded horns to be less lag.
 - Recoded and added paintings.
 - Added Bundles and Book n' Quills.
@@ -29,6 +18,7 @@ Been working on some more secretive areas, I'd rather not spoil.
 - Nerfed Iron Selling: ``15$ -> 10$``
 - Buffed Milk Hut Job: ``5$ -> 12$``
 - Buffed Redstone Selling: ``5$ -> 15$``
+
 - Fixed Bug: New players who join no longer have 0 reputation, instead 100.
 
 - Started working on making the map more larger.
@@ -37,13 +27,13 @@ Been working on some more secretive areas, I'd rather not spoil.
 > to change due to it being in Alpha, everything developed in this server is purely for fun,
 > there is not meant to be anything realistic or logical, this is just for fun, not for realism.
 
-# TJM Frostbite | Dev-Log 42 | 01/05/2025
+## TJM Frostbite | Dev-Log 42 | 01/05/2025
 - Horns have now been given textures meaning different things.
   - Emerald, Fully Custom Horn unlike copper that was once planned to be in minecraft.
   - Copper, Sneak and Crawl to play different variants.
   - Other, nothing special, means the same as emerald.
 
-# TJM Frostbite | Dev-Log 41 | 28/04/2025
+### TJM Frostbite | Dev-Log 41 | 28/04/2025
 - Berries now have the correct item/data.
 - Milk Buckets now have the correct item/data.
 
@@ -53,7 +43,7 @@ Been working on some more secretive areas, I'd rather not spoil.
 - Fixed a bug: Dash Enchantment now works in offhand.
 - Fixed a bug: Smelting ingots now give you the correct item/data.
 
-# TJM Frostbite | Dev-Log 40 | 27/04/2025
+### TJM Frostbite | Dev-Log 40 | 27/04/2025
 - Berries now give you negative effects.
 - Started working on readding Custom Models/Decoration
 
