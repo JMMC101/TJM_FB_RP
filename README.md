@@ -1,8 +1,13 @@
-# Welcome to Frostbite's offical page!
+# Welcome to Frostbite's offical Resource Pack Page!
 Remember that everything is a work in progress, if you are planning on reporting a bug or a glitch you have found, make sure you are on the recommended RP and Mods.
+#
 > [!CAUTION]
 > Sodium will mess with the skybox, we suggest not using it.
 #
+> [!NOTE]
+> Dev-logs 1 to 44 have been copied from the offical discord server and have been slightly edited for github.
+#
+
 ### TJM Frostbite | Dev-Log 44 | 26/05/2025
 Nothing much, me and Axa just like got armor working, i'll be coding them all now
 Been working on some more secretive areas, I'd rather not spoil.
