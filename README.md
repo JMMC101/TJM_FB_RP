@@ -1,6 +1,6 @@
 # Welcome to Frostbite's offical page!
 Remember that everything is a work in progress, if you are planning on reporting a bug or a glitch you have found, make sure you are on the recommended RP and Mods.
-> [!WARNING]
+> [!CAUTION]
 > Sodium will mess with the skybox, we suggest not using it.
 #
 ### TJM Frostbite | Dev-Log 44 | 26/05/2025
