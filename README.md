@@ -3,11 +3,17 @@ Frostbites offical resource pack that all testers should use when play-testing
 unless your name is Alex and you modify it, then fair enough. ¯\\_(ツ)_/¯
    
 REMINDER: Sodium will mess with the skybox, we suggest not using it.
-‎ 
-‎ 
-‎ 
-‎ 
-‎ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
 # TJM Frostbite | Dev-Log 44 | 26/05/2025
 Nothing much, me and Axa just like got armor working, i'll be coding them all now.
 Been working on some more secretive areas, I'd rather not spoil.
