@@ -286,19 +286,19 @@ So what's new in the latest update of mine?
 > increased some drop-rates for ores and added some new items that can generate in the barrels :p
 
 # TJM Frostbite | Dev-log 18 | 22/02/2024
-> • Players no longer shed a bunch of blood when getting hit, but the constant blood is still here.
-> • Ender Spell has been reworked and now is really efficient.
-> • Fixed "Mango Loco", "Mining Potion" and "Medical Potion".
-> • Added the crafting recipe for bread.
-> • Buying a item now displays the stock that is left.
-> • Added some more lanterns to the caves so players with no light can complete parkour.
-> • Amethyst now drops shards instead of the block.
-> • Players no longer bubble under the water when warm.
-> • Landmines are now working, but not fully added into the game yet.
+- Players no longer shed a bunch of blood when getting hit, but the constant blood is still here.
+- Ender Spell has been reworked and now is really efficient.
+- Fixed "Mango Loco", "Mining Potion" and "Medical Potion".
+- Added the crafting recipe for bread.
+- Buying a item now displays the stock that is left.
+- Added some more lanterns to the caves so players with no light can complete parkour.
+- Amethyst now drops shards instead of the block.
+- Players no longer bubble under the water when warm.
+- Landmines are now working, but not fully added into the game yet.
 
 # TJM Frostbite | Dev-log 17 | 22/02/2024
-> Today I patched some bugs and made the new underwater cave,
-it has Deepslate and tuff walls because it is under 0, yeah it
+> Today I patched some bugs and made the new underwater cave, 
+> it has Deepslate and tuff walls because it is under 0, yeah it
 > works like that in TJM.
 
 # TJM Frostbite | Dev-log 16 | 21/02/2024
@@ -373,7 +373,6 @@ it has Deepslate and tuff walls because it is under 0, yeah it
 # TJM Frostbite | Dev-log 9 | 02/02/2024
 > Made some small GUI changes including the pause menu
 > since that used to glitch out a lot when in the server (color-wise)
-
 > Also designed a sign for the flakestop shop, i will be upgrading
 > these signs to a higher quality once i get better at pixel art :)
 
@@ -431,7 +430,6 @@ it has Deepslate and tuff walls because it is under 0, yeah it
 # TJM Frostbite | Dev-log 3 | 08/12/2023
 > Today i finally Remade all of the armor sets in TJM frostbite,
 > i think this is all the work I will be doing to Custom Armor so far.
-
 > The next thing ill be working on for TJM is the spells since they were
 > lost when my PC crashed, this will probably take around a week :)
 
