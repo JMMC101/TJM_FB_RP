@@ -11,6 +11,7 @@
     "tjm.item_sell": {"sounds": ["effects/sell"],"stream":true},
 
     "tjm.jm_arrival": {"sounds": ["misc/jm_arrival"],"stream":true},
+    "tjm.squeak": {"sounds": ["effects/squeak"],"stream":true},
 
     "tjm.crossbow.overcharge": {"sounds": ["effects/crossbow.overcharge"],"stream":true},
 
