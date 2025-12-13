@@ -1,0 +1,10 @@
+{
+    "ambientocclusion": false,
+	"credit": "AxaTheArticFox",
+	"parent": "block/tinted_cross_overlay",
+	"textures": {
+		"cross": "block/grass/0",
+		"overlay": "block/grass/snowed0",
+		"particle": "block/grass/particle"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"parent": "block/leaves/generic.95",
+	"ambientocclusion": true,
+	"textures": {
+		"particle": "block/leaves/spruce/base",
+		"base": "block/leaves/spruce/base",
+		"top": "block/leaves/spruce/top",
+		"bottom": "block/leaves/spruce/bottom",
+		"lush": "block/leaves/spruce/lush",
+
+		"base_snowed": "block/leaves/spruce/base_snowed",
+		"top_snowed": "block/leaves/spruce/top_snowed",
+		"lush_snowed": "block/leaves/spruce/lush_snowed"
+	}
+}

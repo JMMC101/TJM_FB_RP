@@ -1,0 +1,9 @@
+{
+    "ambientocclusion": false,
+	"parent": "block/tinted_cross_overlay",
+    "textures": {
+        "cross": "block/grass/4",
+		"overlay": "block/grass/snowed4",
+		"particle": "block/grass/particle"
+    }
+}
